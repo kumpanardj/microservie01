@@ -1,0 +1,29 @@
+
+<div *ngFor= "let tweet of tweets">
+<div class="media">
+  <div class="media-left">
+    <!--<a href="#">-->
+      <img class="media-object" src={{tweet.tweetImgUrl}} alt="Image">
+    <!--</a>-->
+  </div>
+  <div class="media-body">
+  <h3 class="media-heading">{{tweet.authorName|uppercase}}</h3><span>{{tweet.authorHandle}}</span>
+    <p>
+      <!--Summarize is a custom pipe here and we are passing an argument to it-->
+      {{tweet.tweetMesg | summarize}}
+    </p>   
+    <app-heart [likes]="tweet.numLikes"></app-heart>  
+    </div>
+</div>
+</div>
+ 
+ <div class = "zipp>">
+ Creating a Zippy Component
+
+ <app-zippy [title] = "'Title passed from Tweet HTML with @Input() '">
+   <div class= "zippyBody">Body of content passed from Tweet html</div></app-zippy>
+<app-zippy [title] = "'Title passed from Tweet HTML with @Input() Number 2 '">
+   <div class= "zippyBody">Body of content passed from Tweet html Number 2</div></app-zippy>
+
+
+<div>
