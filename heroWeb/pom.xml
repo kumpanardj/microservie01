@@ -19,11 +19,11 @@
 
 
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.hitesh.boot</groupId>
 			<artifactId>heroClient</artifactId>
 			<version>${project.version}</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
